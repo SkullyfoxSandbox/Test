@@ -19,7 +19,7 @@ module.exports = isProd => [
         /en|fr/
     ),
     new HtmlWebpackPlugin({
-        title: 'Image Editor',
+        title: 'Foxhub Web Radio',
         template: path.resolve(__dirname, '../../src/index.html')
     }),
     new WriteFilePlugin(),

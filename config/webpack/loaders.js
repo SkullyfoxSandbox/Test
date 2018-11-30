@@ -25,7 +25,7 @@ module.exports = isProd => [
         ]
     },
     {
-        test: /\.sass$/,
+        test: /\.(scss|sass)$/i,
         use: [
             !isProd && 'css-hot-loader',
             isProd
@@ -39,16 +39,7 @@ module.exports = isProd => [
                     localIdentName: '[name]-[local]--[hash:base64:5]'
                 }
             },
-            'sass-loader',
-            {
-                loader: 'sass-resources-loader',
-                options: {
-                    resources: require(path.join(
-                        __dirname,
-                        '../../src/styles/settings/index.js'
-                    ))
-                }
-            }
+            'sass-loader'
         ].filter(loader => loader !== false)
     }
 ];
