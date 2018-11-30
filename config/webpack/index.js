@@ -3,6 +3,7 @@ const plugins = require('./plugins.js');
 const path = require('path');
 
 module.exports = env => {
+    console.log(env);
     const isProd = env.NODE_ENV === 'production';
     return {
         target: 'web',
