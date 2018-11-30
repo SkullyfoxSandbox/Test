@@ -1,1 +1,1 @@
-require('./config/webpack/index.js');
+module.exports = require('./config/webpack/index.js');
