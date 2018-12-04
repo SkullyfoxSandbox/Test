@@ -19,7 +19,7 @@ module.exports = isProd => [
         /en|fr/
     ),
     new HtmlWebpackPlugin({
-        title: 'Foxhub Web Radio',
+        title: 'BoilerPlate FrontEnd',
         template: path.resolve(__dirname, '../../src/index.html')
     }),
     new WriteFilePlugin(),

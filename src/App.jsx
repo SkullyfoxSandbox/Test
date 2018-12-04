@@ -2,8 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { hot } from 'react-hot-loader';
 import { BrowserRouter , Route} from 'react-router-dom';
 
-import Home from './Home/Home.jsx';
-import Test from './Test/Test.jsx';
+import Home from './pages/Home/Home.jsx';
 
 class App extends Component {
 
@@ -18,8 +17,7 @@ class App extends Component {
         return (
           <BrowserRouter>
             <div>
-              <Route path="/" component={Home} />
-              <Route path="/test" component={Test} />
+              <Route path="/" exact="true" component={Home} />
             </div>
           </BrowserRouter>
         );
