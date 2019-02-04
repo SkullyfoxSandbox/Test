@@ -8,8 +8,9 @@
         "dev": "webpack-dev-server --env.NODE_ENV=development --open",
         "presetup": "npm i",
         "setup": "npm run dev",
-        "new:component" : "node tools/script/createComponent.js",
-        "new:page" : "node tools/script/createPage.js"
+        "new:component": "node tools/script/createComponent.js",
+        "new:page": "node tools/script/createPage.js",
+        "cmd": "node tools/script/cmd.js"
     },
     "author": "",
     "license": "ISC",
