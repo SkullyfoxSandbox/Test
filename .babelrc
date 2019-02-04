@@ -24,8 +24,6 @@
             'react-css-modules',
             {
                 webpackHotModuleReloading: true,
-                generateScopedName: '[name]-[local]--[hash:base64:5]',
-                handleMissingStyleName: 'warn',
                 filetypes: {
                     '.scss': {
                         syntax: 'postcss-scss'

@@ -35,9 +35,7 @@ module.exports = isProd => [
             {
                 loader: 'css-loader',
                 options: {
-                    sourceMap: !isProd,
-                    modules: true,
-                    localIdentName: '[name]-[local]--[hash:base64:5]'
+                    sourceMap: !isProd
                 }
             },
             'sass-loader'
