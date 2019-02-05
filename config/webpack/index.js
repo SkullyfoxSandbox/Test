@@ -25,10 +25,5 @@ module.exports = env => {
             rules: loaders(isProd)
         },
         plugins: plugins(isProd),
-        optimization: {
-            splitChunks: {
-                chunks: 'all'
-            }
-        }
     };
 };

@@ -8,12 +8,8 @@
       render(){
         return(
           <div className="AppContainer">
-
             <div className="nav">
-
-              <p>test</p>
             </div>
-
             {this.props.children}
           </div>
         );

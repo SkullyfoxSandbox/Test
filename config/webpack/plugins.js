@@ -23,7 +23,7 @@ module.exports = isProd => [
         template: path.resolve(__dirname, '../../src/index.html')
     }),
     new WriteFilePlugin(),
-    new CleanWebpackPlugin(['public/assets'], {
+    new CleanWebpackPlugin(['public/'], {
         root: path.join(__dirname, '../../'),
     }),
     new MiniCssExtractPlugin(),
