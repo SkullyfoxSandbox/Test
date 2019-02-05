@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { hot } from 'react-hot-loader';
 import { BrowserRouter , Route} from 'react-router-dom';
 
+import Layout from './components/Layout/Layout.jsx'
 import Home from './pages/Home/Home.jsx';
 
 class App extends Component {
@@ -16,9 +17,9 @@ class App extends Component {
             : window.__INITIAL_DATA__;
         return (
           <BrowserRouter>
-            <div>
-              <Route path="/" exact="true" component={Home} />
-            </div>
+            <Layout>
+                <Route path="/" exact="true" component={Home} />
+            </Layout>
           </BrowserRouter>
         );
     }
