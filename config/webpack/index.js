@@ -19,7 +19,6 @@ module.exports = env => {
         output: {
             filename: '[name].js',
             path: path.resolve(__dirname, '../../public'),
-            publicPath: '/assets/'
         },
         module: {
             rules: loaders(isProd)

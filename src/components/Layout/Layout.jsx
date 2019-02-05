@@ -8,9 +8,20 @@
       render(){
         return(
           <div className="AppContainer">
-            <div className="nav">
-            </div>
             {this.props.children}
+            <div className="nav">
+              <ul>
+                <li>
+                  <i className="fas fa-home"></i>
+                </li>
+                <li>
+                  <i className="far fa-chart-bar"></i>
+                </li>
+                <li>
+                  <i className="fab fa-discord"></i>
+                </li>
+              </ul>
+            </div>
           </div>
         );
       }

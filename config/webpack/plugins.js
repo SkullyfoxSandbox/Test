@@ -5,7 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
     .BundleAnalyzerPlugin;
-const UglifyWebpackPlugin = require('uglifyjs-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const path = require('path');
 
@@ -19,7 +18,6 @@ module.exports = isProd => [
         /en|fr/
     ),
     new HtmlWebpackPlugin({
-        title: 'BoilerPlate FrontEnd',
         template: path.resolve(__dirname, '../../src/index.html')
     }),
     new WriteFilePlugin(),

@@ -1,9 +1,25 @@
 .AppContainer
     display: grid
-    grid-template-columns: 10vw 90vw
+    grid-template-rows: 1fr 80px
     height: 100vh
     width: 100vw
     .nav
         background-color: #303952
-        @media only screen and(max-width: 475px)
-            background-color: #fff
+        display: flex
+        flex-direction: row
+        justify-content: center
+        ul
+            display: grid
+            grid-template-columns: repeat(3,1fr)
+            width: 30vw
+            li
+                display: flex
+                flex-direction: columns
+                justify-content: center
+                align-items: center
+                font-size: 2em
+                color: #78e08f
+                transition: all .2s
+                &:hover
+                    background-color: rgba(255,255,255,.1)
+                    cursor: pointer

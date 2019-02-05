@@ -26,6 +26,18 @@ module.exports = isProd => [
         ]
     },
     {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+            'file-loader'
+        ]
+    },
+    {
+        test: /\.css$/,
+        use: [
+            'css-loader',
+        ]
+    },
+    {
         test: /\.(scss|sass)$/i,
         use: [
             !isProd && 'css-hot-loader',
